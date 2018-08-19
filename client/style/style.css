@@ -1,0 +1,166 @@
+body {
+    overflow: hidden;
+}
+.main_bg {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #fff;
+    background-image: linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px), linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
+}
+nav i.material-icons {
+    font-size: 35px !important;
+}
+.collection .collection-item {
+    line-height: 2.5rem !important;
+}
+.btn {
+    height: 54px;
+}
+.btn.blue {
+    width: 20%;
+}
+.container {
+    position: relative;
+    width: 100% !important;
+    max-width: 100% !important;
+
+}
+.free_button {
+    padding: 45px;
+    cursor: pointer;
+}
+nav a {
+    padding-left: 25px !important;
+}
+.btn-floating {
+    margin-top: 48px;
+}
+.collection {
+    border: none;
+}
+.login-wrapper,
+.quote {
+    top: 30%;
+}
+.quote_sub {
+    top: 45%;
+    color: #ee6e73;
+}
+[contenteditable],
+input,
+textarea {
+    color: #666;
+    caret-color: #ee6e73;
+}
+.create_now_button {
+    top: 55%;
+}
+.correct_wrap {
+    width: 100%;
+    display: table;
+    top: 235px;
+    margin: 0;
+    /* nice thing of auto margin if display:flex; it center both horizontal and vertical :) */
+}
+.t_left {
+    text-align: left;
+}
+.center_form {
+    display: table;
+    margin: auto;
+}
+.sub_header_title {
+    text-align: center;
+    font-size: 2rem;
+    color: gray;
+}
+.center_form_title {
+    display: table-caption;
+    font-family: 'Handlee', cursive !important;
+}
+.c_form {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+}
+.line_view {
+    max-height: 332px;
+    overflow-y: scroll;
+}
+.c_red {
+    color: #ee6e73;
+}
+.like {
+
+    float: right;
+    display: inline-flex;
+    width: 22px;
+    margin-right: 70px;
+    cursor: pointer;
+}
+.centerify {
+    left: 0;
+    line-height: 200px;
+    margin: -100px auto auto;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+.auth {
+    margin-top: 20% !important;
+}
+.f_center {
+    display: flex;
+    justify-content: center;
+}
+.md-48 {
+    font-size: 90px;
+}
+.hamburger {
+    display: none;
+}
+.errors {
+    color: #F44336;
+}
+form {
+    width: 45%;
+}
+a,
+div,
+input {
+    font-size: 2rem !important;
+    /* font-family: 'Roboto Mono', monospace; */
+    font-family: 'Shadows Into Light Two', cursive !important;
+
+}
+.poem_line_wrapper {
+    width: 80%;
+}
+@media only screen and (max-width: 560px) {
+    .quote {
+        display: none;
+    }
+    .auth {
+        margin-top: 180px !important;
+    }
+    .hamburger {
+        display: inline-block;
+    }
+    nav a:not(:first-child) {
+        display: none;
+    }
+    .expand a.left {
+        background-color: #ee6e73;
+        display: block;
+        float: none !important;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+/* font-family: 'Satisfy', cursive;
+font-family: 'Caveat', cursive;
+font-family: 'Sacramento', cursive; */
