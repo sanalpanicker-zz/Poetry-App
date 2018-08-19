@@ -5,6 +5,7 @@ import {qFetchStanzas} from '../../queries/queries';
 
 class ThumbsUp extends React.Component {
 
+    // Will publish the likes the user gets for his lines added.
     publishLike = () => {
         this
             .props
@@ -32,6 +33,7 @@ class ThumbsUp extends React.Component {
         );
     }
 }
+// mutation for like functionlity
 const likeStanza = gql `
 mutation likeStanza($id : ID){
     likeStanza(id:$id){

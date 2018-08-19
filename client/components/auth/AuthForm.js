@@ -1,5 +1,7 @@
 import React from 'react';
-
+/**
+ * AuthForm provides the authentication panel for Sign Up and Log In
+ */
 class AuthForm extends React.Component {
     constructor(props) {
         super(props);
@@ -9,12 +11,15 @@ class AuthForm extends React.Component {
             password: ''
         };
     }
+    // triggered when the user types his email
     emailChange = (e) => {
         this.setState({email: e.target.value});
     }
+    // triggered when the user types his password
     passwordChange = (e) => {
         this.setState({password: e.target.value});
     }
+    // this is called on the Auth for submit
     authSubmit = (e) => {
         e.preventDefault();
         this
@@ -24,7 +29,7 @@ class AuthForm extends React.Component {
 
     render() {
 
-        //setting invalid for material css styles
+        // setting invalid for material css styles
         let isValid = '';
         if (this.props.error) {
             isValid = 'invalid'
@@ -33,7 +38,8 @@ class AuthForm extends React.Component {
             <div className="centerify f_center auth">
                 <form onSubmit={this.authSubmit} className="col s6">
                     <div className="input-field">
-                        <input autoFocus
+                        <input
+                            autoFocus
                             className={`${isValid}`}
                             placeholder="Email"
                             type="email"
